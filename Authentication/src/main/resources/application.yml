@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: User_Authentication
+  datasource:
+    url: jdbc:mysql://localhost:3306/cts_assignment
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.example.com
+    port: 587
+    username: your-email@example.com
+    password: your-email-password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+server:
+  port: 8081
